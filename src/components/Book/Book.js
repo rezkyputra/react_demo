@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Switch, Route, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 class Book extends Component {
     render(){
         return(
-            <BrowserRouter>
             <div className="col-9 mx-auto">                    
                 <h3 className="text-primary">BOOKS</h3>
                 <div className="table-responsive">
@@ -45,7 +44,6 @@ class Book extends Component {
                 </div>
                 <Link to={'/AddBook'} className="btn btn-primary btn-sm">Add Book</Link>
             </div>
-            </BrowserRouter>
         );
     }
 }
